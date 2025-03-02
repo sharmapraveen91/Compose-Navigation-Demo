@@ -163,20 +163,20 @@ navController.navigate("A") {
 navController.currentBackStackEntry?.savedStateHandle?.set("image", image)
 ```
 
----
+----
 ## 📌 Best Practices ✅
 
-✔ Use sealed interface for defining navigation destinations
-✔ Encode/decode JSON objects when passing complex data
-✔ Use savedStateHandle to retain UI state across navigation
-✔ Implement Deep Linking for external navigation
-✔ Handle authentication flows seamlessly
+- ✔ Use sealed interface for defining navigation destinations
+- ✔ Encode/decode JSON objects when passing complex data
+- ✔ Use savedStateHandle to retain UI state across navigation
+- ✔ Implement Deep Linking for external navigation
+- ✔ Handle authentication flows seamlessly
 
 ## ❌ Common Mistakes ⚠️
 
-❌ Passing large objects directly in navigation arguments (use JSON encoding)
-❌ Forgetting to clear back stack when navigating to login on 401 errors
-❌ Using hardcoded routes instead of sealed interface
+- ❌ Passing large objects directly in navigation arguments (use JSON encoding)
+- ❌ Forgetting to clear back stack when navigating to login on 401 errors
+- ❌ Using hardcoded routes instead of sealed interface
 
 ----
 🏆 Conclusion
