@@ -1,6 +1,6 @@
 [versions]
 accompanistPlaceholderMaterial = "0.33.2-alpha"
-agp = "8.8.2"
+agp = "8.7.3"
 coilCompose = "2.6.0"
 composeShimmer = "1.0.4"
 converterMoshi = "2.9.0"
@@ -11,11 +11,13 @@ coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
+kotlinxCoroutinesTest = "1.10.1"
 kotlinxSerializationJson = "1.8.0"
 lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.10.1"
 composeBom = "2025.02.00"
 loggingInterceptor = "4.10.0"
+mockk = "1.13.17"
 moshiKotlin = "1.15.0"
 moshiKotlinCodegen = "1.15.0"
 navigationCompose = "2.8.8"
@@ -23,6 +25,7 @@ retrofit2KotlinxSerializationConverter = "0.8.0"
 ksp="2.1.20-RC-1.0.31"
 hiltCompilor ="2.52"
 parcelize="2.1.20-RC"
+turbine = "1.2.0"
 
 [libraries]
 accompanist-placeholder-material = { module = "com.google.accompanist:accompanist-placeholder-material", version.ref = "accompanistPlaceholderMaterial" }
@@ -47,11 +50,14 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiKotlin" }
 moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshiKotlinCodegen" }
 retrofit2-kotlinx-serialization-converter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofit2KotlinxSerializationConverter" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
